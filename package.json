@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma generate && npx prisma db push && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall":"npx prisma generate && npx prisma db push"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
